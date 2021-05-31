@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Post} from "../models/Post";
 
 @Component({
@@ -7,14 +7,7 @@ import {Post} from "../models/Post";
   styleUrls: ['./post.component.css']
 })
 
-export class PostComponent implements OnInit {
-
+export class PostComponent {    // TODO якщо OnInit не використовується, то можна не імплементувати
   @Input()
   post: Post;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }

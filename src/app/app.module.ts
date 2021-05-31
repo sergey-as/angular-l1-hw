@@ -21,4 +21,4 @@ import { PostComponent } from './post/post.component';
 })
 export class AppModule {
 }
-//angular-l1-hw
+//angular-l1-d20210531-practice

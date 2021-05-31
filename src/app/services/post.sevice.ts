@@ -16,8 +16,4 @@ export class PostService {
   getPosts(): Observable<Post[]> {
     return this.httpClient.get<Post[]>(this.url)
   }
-
-  getPostById(id: number): Observable<Post> {                       // TODO Не використаний код
-    return this.httpClient.get<Post>(this.url + '/' + id)
-  }
 }

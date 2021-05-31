@@ -7,7 +7,7 @@ import {Post} from "../models/Post";
   styleUrls: ['./post.component.css']
 })
 
-export class PostComponent {    // TODO якщо OnInit не використовується, то можна не імплементувати
+export class PostComponent {
   @Input()
   post: Post;
 }

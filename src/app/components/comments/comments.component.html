@@ -1,0 +1,11 @@
+<!--<div>-->
+<!--  <p *ngFor="let co of comments">{{co}}</p>-->
+<!--</div>-->
+<div *ngFor="let comment of comments">
+  <p>{{'id:'}} {{comment?.id}}</p>
+  <p>{{'post Id:'}} {{comment?.postId}} {{'id:'}} {{comment?.id}}</p>
+  <p>{{'name:'}} {{comment?.name}}</p>
+  <p>{{'email:'}} {{comment?.email}}</p>
+  <p>{{'body:'}} {{comment?.body}}</p>
+  <hr>
+</div>

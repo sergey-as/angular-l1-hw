@@ -1,16 +1,16 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {HttpClientModule} from "@angular/common/http";
 
 import {AppComponent} from './app.component';
-import {PostsComponent} from './posts/posts.component';
-import {HttpClientModule} from "@angular/common/http";
-import { PostComponent } from './post/post.component';
+import {CommentsComponent, PostComponent, PostsComponent} from './components';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
-    PostComponent
+    PostComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +19,8 @@ import { PostComponent } from './post/post.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
 }
+
 //angular-l1-d20210531-practice
